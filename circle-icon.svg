@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<svg width="192" height="192" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+ <!-- Created with SVG-edit - https://github.com/SVG-Edit/svgedit-->
+
+ <title>yticon</title>
+ <g class="layer">
+  <title>Layer 1</title>
+  <circle cx="96" cy="96" fill="#ff0000" id="svg_2" r="88" stroke="#000000" stroke-dasharray="null" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0" stroke-width="0" transform="matrix(1, 0, 0, 1, 0, 0)"/>
+  <path d="m140,96l-76,42l0,-86l76,44l0,0z" fill="#fafafa" id="svg_3" stroke="#000000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-opacity="null" stroke-width="0"/>
+ </g>
+</svg>

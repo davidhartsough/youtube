@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: https://ogp.me/ns#">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Lil YouTube Player</title>
+    <meta name="description" content="A simple/minimal YouTube player" />
+    <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="./icon.svg" type="image/svg+xml" />
+    <link rel="manifest" href="./manifest.json" />
+    <style>
+      *,
+      ::before,
+      ::after {
+        box-sizing: border-box;
+      }
+      :root {
+        --ff: ui-sans-serif, system-ui, -apple-system, "BlinkMacSystemFont",
+          "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "Noto Sans",
+          sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+          "Noto Color Emoji";
+        --bg: #121212;
+        --fg: #fafafa;
+      }
+      html,
+      body,
+      input,
+      button {
+        background-color: var(--bg);
+        line-height: 1.5;
+        font-family: var(--ff);
+        margin: 0;
+        color: var(--fg);
+        font-size: 16px;
+      }
+      header {
+        padding: 0.5rem;
+        max-width: 42rem;
+        margin: auto;
+      }
+      form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #ccc;
+        border-radius: 2rem;
+        overflow: hidden;
+      }
+      input,
+      button {
+        border: none;
+      }
+      input {
+        padding: 0.5rem 0.5rem 0.5rem 1.25rem;
+        flex: 1 1 auto;
+      }
+      button {
+        font-weight: 500;
+        text-transform: uppercase;
+        padding: 0.5rem 1.25rem;
+        letter-spacing: 0.025rem;
+        cursor: pointer;
+        background-color: #222;
+      }
+      #player {
+        margin: 1rem auto;
+        padding: 1rem 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <form method="get">
+          <input
+            type="text"
+            placeholder="Enter a URL or ID"
+            title="Please enter a valid YouTube URL or video ID."
+            id="v"
+            name="v"
+            required
+          />
+          <button type="submit">Go</button>
+        </form>
+      </header>
+      <div id="player"></div>
+    </main>
+    <script src="./index.js"></script>
+  </body>
+</html>
